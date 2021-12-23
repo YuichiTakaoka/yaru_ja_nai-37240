@@ -1,24 +1,45 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## usersテーブル
 
-Things you may want to cover:
+| Column             | Type       | Options                        |
+| -------------------| ---------- | ------------------------------ |
+| name               | string     | null: false                    |
+| email              | string     | null: false, unique: true      |
+| encrypted_password | string     | null: false                    |
+| birthday_year      | date       | null: false                    |
+| gender_id          | integer    | null: false                    |
 
-* Ruby version
+### Association
+has_one :profile
+has_many :favorites
 
-* System dependencies
+## profilesテーブル
 
-* Configuration
+| Column             | Type       | Options                        |
+| -------------------| ---------- | ------------------------------ |
+| name               | string     | null: false                    |
+| position_id        | integer    | null: false                    |
+| consept            | text       | null: false                    |
+| depertment_id      | integer    | null: false                    |
+| division_id        | integer    | null: false                    |
+| section_id         | integer    | null: false                    |
+| strengths          | text       |                                |
+| weakness           | text       |                                |
+| user               | references | null: false, foreign_key: true |
 
-* Database creation
+### Association
 
-* Database initialization
+belongs_to :user
+has_many :favorites
 
-* How to run the test suite
+## favorites
+| Column             | Type       | Options                        |
+| -------------------| ---------- | ------------------------------ |
+| user               | references | null: false, foreign_key: true |
+| profile            | references | null: false, foreign_key: true |
 
-* Services (job queues, cache servers, search engines, etc.)
+### Association
 
-* Deployment instructions
-
-* ...
+belongs_to: user
+belongs_to: profile
