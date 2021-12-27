@@ -1,0 +1,26 @@
+.st-fotter {
+  width: 100%;
+  min-width: 1000px;
+  height: 200px;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+}
+
+.st-fotter-container {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.st-fotter-start {
+  color: black;
+  font-size: 12px;
+  margin: 0 10px;
+}
+
+.fotter-logo {
+  width: 1800px;
+  height: 500px;
+  margin: 0 auto;
+}
