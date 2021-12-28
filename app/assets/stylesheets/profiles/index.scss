@@ -1,0 +1,101 @@
+a {
+  text-decoration: none;
+}
+
+.main {
+  background-color: bisque;
+}
+
+/* 画面の「YARU_JA_NAI」帯部分 */
+.title-contents {
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 5vh 15vw;
+  text-align: center;
+  text-shadow: 0 0 5px darkslategrey(0 0 0 1);
+}
+
+.srevice-title {
+  font-size: 10vh;
+  color: rgb(255, 185, 127);
+}
+
+.srevice-theme {
+  font-size: 12vh;
+  color: rgb(128, 98, 0);
+}
+
+.srevice-logo {
+  font-size: 10vh;
+  color: rgb(255, 178, 127);
+  
+}
+
+/* 画面の「YARU_JA_NAI」帯部分 */
+
+/* YARU_JA_NAIの概要部分 */
+.select-reason-contents {
+  padding: 5vh 15vw;
+}
+
+.select-reason-contents>.title {
+  text-align: center;
+  font-size: 10vh;
+  font-weight: bold;
+  margin-bottom: 5vh;
+  position: relative;
+  border: solid 1px orange;
+}
+
+.select-reason-contents>.title::after {
+  content: '';
+  width: 70px;
+  height: 5px;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-40%);
+}
+
+.reason-lists {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.reason-lists>.list {
+  width: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.list-pict {
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.reason-list-text {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+.reason-list-discription {
+  text-align: center;
+  font-size: 10vh;
+  font-weight: bold;
+  margin-bottom: 5vh;
+  position: relative;
+  border: solid 1px orange;
+}
+
+/* YARU_JA_NAIの概要部分 */
+
