@@ -16,17 +16,16 @@
 }
 
 .search-form {
-  width: 63vw;
+  width: 50vw;
   height: 5vh;
   display: flex;
-  margin-bottom: 5px;
-  margin-left: 20px;
+  margin: 0 100px 0 0;
 }
 
 .search-form>.input-box {
-  width: 50vw;
+  width: 100%;
   height: 5vh;
-  padding-left: 10px;
+  padding-left: 30px;
 }
 
 .search-button {
@@ -47,39 +46,41 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  padding: 10vh 0;
+  padding: 1vh 0;
 }
 
-.lists-left {
+.list-right {
+  margin-left: 20px;
   display: flex;
-  min-width: 200px;
-
+  list-style: none;
+  align-items: flex-end; 
+  justify-content: space-between;
 }
 
 .user-name {
+  font-size: 25px;
   text-decoration: none;
-  margin-right: 40%;
+  margin-right: 70px;
   color: black;
 }
 
 .logout {
+  font-size: 22px;
   text-decoration: none;
   color: black;
-}
-
-.list-right {
-  display: flex;
-  list-style: none;
-  align-items: flex-end;
+  margin-right: 70px;
 }
 
 .login {
+  font-size: 25px;
   text-decoration: none;
-  margin-right: 100%;
+  margin-right: 70px;
   color: black;
 }
 
 .sign-up {
+  font-size: 25px;
   text-decoration: none;
+  margin-right: 70px;
   color: black;
 }

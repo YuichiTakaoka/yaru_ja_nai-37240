@@ -7,9 +7,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   with_options presence: true do
     validates :name
-    validates :email
     validates :password, format: { with: VALID_PASSWORD_REGEX, message: 'is invalid. Include both letters and numbers' }
     validates :birthday_year
-    validates :gender_id
+    validates :gender_id, numericality: { other_than: 1, message: 'select form' }
   end
 end
