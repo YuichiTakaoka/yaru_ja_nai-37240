@@ -15,15 +15,6 @@
   align-items: center;
 }
 
-.yarujanai-icon {
-  width: 1000vw;
-  height: 50vh;
-  background-image: url('header.image.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-}
-
 .search-form {
   width: 63vw;
   height: 5vh;
@@ -51,26 +42,24 @@
 }
 
 .nav {
-  font-size: 18px;
+  font-size: 28px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-  padding: 1vh 0;
+  padding: 10vh 0;
 }
 
-.list-right {
+.lists-left {
   display: flex;
-  list-style: none;
-  align-items: flex-end;
-  background-color: bisque;
+  min-width: 200px;
+
 }
 
 .user-name {
   text-decoration: none;
-  margin-right: 3vw;
+  margin-right: 40%;
   color: black;
-  font-weight: bold;
 }
 
 .logout {
@@ -78,10 +67,15 @@
   color: black;
 }
 
+.list-right {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+}
+
 .login {
   text-decoration: none;
-  line-height: 32px;
-  margin-right: 3vw;
+  margin-right: 100%;
   color: black;
 }
 

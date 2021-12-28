@@ -1,0 +1,14 @@
+.too-header {
+  width: 100%;
+  min-width: 800px;
+  height: 130px;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.too-logo {
+  width: 50vw;
+  height: 40vh;
+}
