@@ -7,7 +7,7 @@ class Depertment < ActiveHash::Base
     { id: 5, name: '看護副総師長' },
     { id: 6, name: '看護総師長' },
     { id: 7, name: '看護部長' },
-    { id: 8, name: '訪問看護ST管理者' },
+    { id: 8, name: '訪問看護ST管理者' }
   ]
 
   include ActiveHash::Associations
