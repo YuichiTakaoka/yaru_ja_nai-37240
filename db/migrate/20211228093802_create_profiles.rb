@@ -6,7 +6,7 @@ class CreateProfiles < ActiveRecord::Migration[6.0]
       t.text :consept,            null: false
       t.integer :depertment_id,   null: false
       t.integer :division_id,     null: false
-      t.integer :license_id,         null: false
+      t.integer :license_id,      null: false
       t.text :strength
       t.text :weakness
       t.references :user,         null: false, foreign_key: true

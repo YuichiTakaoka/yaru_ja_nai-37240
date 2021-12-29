@@ -22,17 +22,17 @@ a {
 }
 
 .srevice-title {
-  font-size: 10vh;
+  font-size: 8vh;
   color: rgb(255, 185, 127);
 }
 
 .srevice-theme {
-  font-size: 12vh;
+  font-size: 8vh;
   color: rgb(128, 98, 0);
 }
 
 .srevice-logo {
-  font-size: 10vh;
+  font-size: 8vh;
   color: rgb(255, 178, 127);
   
 }
@@ -46,7 +46,7 @@ a {
 
 .select-reason-contents>.title {
   text-align: center;
-  font-size: 10vh;
+  font-size: 6vh;
   font-weight: bold;
   margin-bottom: 5vh;
   position: relative;
@@ -65,7 +65,7 @@ a {
 
 .reason-lists {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -90,7 +90,7 @@ a {
 
 .reason-list-discription {
   text-align: center;
-  font-size: 10vh;
+  font-size: 6vh;
   font-weight: bold;
   margin-bottom: 5vh;
   position: relative;
@@ -99,3 +99,18 @@ a {
 
 /* YARU_JA_NAIの概要部分 */
 
+.profile-create-btn {
+  height: 100%;
+}
+
+.profile-btn-text {
+  text-decoration: none;
+  position: absolute;
+  margin: 90px 0 0 30px;
+}
+
+// .profile-btn-icon {
+//   position: relative;
+//   height: 100%;
+//   margin-bottom: 80px;
+// }

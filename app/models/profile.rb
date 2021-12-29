@@ -10,7 +10,7 @@ class Profile < ApplicationRecord
 
   validates :image,        presence: true
   validates :name,         presence: true, length: { maximum: 30 }
-  validates :concept,      presence: true, length: { maximum: 1000 }
+  validates :consept,      presence: true, length: { maximum: 1000 }
 
   validates :position_id,    presence: true, numericality: { other_than: 1, message: "can't be blank" }
   validates :depertment_id,  presence: true, numericality: { other_than: 1, message: "can't be blank" }

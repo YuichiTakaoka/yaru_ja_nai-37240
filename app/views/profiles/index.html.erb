@@ -73,6 +73,11 @@
   </div>
   <%# <% YARU_JA_NAIの概要部分 %>
 
+  <%= link_to(new_profile_path, class: 'profile-create-btn') do %>
+  <span class='profile-btn-text'>プロフィール作成</span>
+  <%= image_tag 'push_button-1.png' , size: '185x100' ,class: "profile-btn-icon" %>
+<% end %>
+
 
   <%= render "shared/fotter" %>
 

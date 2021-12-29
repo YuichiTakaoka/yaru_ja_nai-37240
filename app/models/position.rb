@@ -6,7 +6,7 @@ class Position < ActiveHash::Base
     { id: 4, name: '4~6年目' },
     { id: 5, name: '7~9年目' },
     { id: 6, name: '10~14年目' },
-    { id: 2, name: '15年目以上' }
+    { id: 7, name: '15年目以上' }
   ]
 
   include ActiveHash::Associations
