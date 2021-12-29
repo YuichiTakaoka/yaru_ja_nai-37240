@@ -23,8 +23,8 @@ has_many :favorites
 | consept            | text       | null: false                    |
 | depertment_id      | integer    | null: false                    |
 | division_id        | integer    | null: false                    |
-| section_id         | integer    | null: false                    |
-| strengths          | text       |                                |
+| license_id         | integer    | null: false                    |
+| strength           | text       |                                |
 | weakness           | text       |                                |
 | user               | references | null: false, foreign_key: true |
 
