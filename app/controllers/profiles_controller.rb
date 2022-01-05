@@ -2,6 +2,7 @@ class ProfilesController < ApplicationController
   before_action :authenticate_user!, except: :index
 
   def index
+    @profiles = Profile.all
   end
 
   def new
@@ -15,6 +16,10 @@ class ProfilesController < ApplicationController
     else
       render :new
     end
+  end
+
+  def show
+    @profile = Profile.find(params[:id])
   end
 
   private

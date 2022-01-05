@@ -1,0 +1,60 @@
+<div class="profile-show">
+  <div class="profile-box">
+    <h2 class="name">
+      <%= @profile.name %>
+    </h2>
+    <div class="profile-image-content">
+      <%= image_tag @profile.image, class:"profile-box-img"%>
+    </div>
+  <div>
+
+  <% if current_user == @profile.user %>
+    <%= link_to "プロフィールの編集", "#", method: :get, class: "profile-btn" %>
+    <p class="or-text">or</p>
+    <%= link_to "プロフィールの削除", "#", method: :delete, class:"profile-destroy" %>
+  <% end %>
+
+  <div class="profile-deta-box">
+    <span><%= @profile.consept %></span>
+    </div>
+    <table class="detail-table">
+      <tbody>
+          <tr>
+            <th class="table__col1">経歴年数</th>
+            <td class="table__col2"><%= @profile.position.name %></td>
+          </tr>
+          <tr>
+            <th class="table__col1">経験した役職</th>
+            <td class="table__col2"><%= @profile.depertment.name %></td>
+          </tr>
+          <tr>
+            <th class="table__col1">経験した部署</th>
+            <td class="table__col2"><%= @profile.division.name %></td>
+          </tr>
+          <tr>
+            <th class="table__col1">保有資格（医療・看護・福祉系）</th>
+            <td class="table__col2"><%= @profile.license.name %></td>
+          </tr>
+          <tr>
+            <th class="table__col1">得意分野</th>
+            <td class="table__col2"><%= @profile.strength %></td>
+          </tr>
+          <tr>
+            <th class="table__col1">苦手分野</th>
+            <td class="table__col2"><%= @profile.weakness %></td>
+          </tr>
+      </tbody>
+    </table>
+    <div class="option">
+      <div class="favorite-btn">
+        <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
+         <span>ヤルジャナイ 0</span>
+      </div>
+    </div>
+    <div class="links-btn-contents">
+      <%=link_to 'トップページにもどる', root_path, class:"back-btn" %>
+    </div>
+  </div>
+</div>
+
+  

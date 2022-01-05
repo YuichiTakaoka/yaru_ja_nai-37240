@@ -73,11 +73,29 @@
   </div>
   <%# <% YARU_JA_NAIの概要部分 %>
 
-  <%= link_to(new_profile_path, class: 'profile-create-btn') do %>
+<%= link_to(new_profile_path, class: 'profile-create-btn') do %>
   <span class='profile-btn-text'>プロフィール作成</span>
   <%= image_tag 'push_button-1.png' , size: '185x100' ,class: "profile-btn-icon" %>
 <% end %>
 
+  <div class='profile-contents'>
+    <h2 class='title'>ピックアップカテゴリー</h2>
+    <div class="subtitle" >
+      新規投稿プロフィール
+    </div>
+    <ul class='profile-lists'>
+      <% if @profiles.present? %>
+      <% @profiles.each do |profile| %>
+      <li class='list'>
+        <%= link_to profile_path(profile.id) do %>
+        <div class='profile-img-content'>
+          <%= image_tag profile.image, class: "profile-img" %>
+        <% end %>
+        </div>
+      </li>
+    <% end %>
+  <% end %>
+  </div>
 
   <%= render "shared/fotter" %>
 
