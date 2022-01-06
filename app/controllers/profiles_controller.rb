@@ -1,7 +1,8 @@
 class ProfilesController < ApplicationController
-  before_action :set_profile, only: [:show, :edit, :update]
+  before_action :set_profile, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: :index
   before_action :move_to_index, except: [:index, :show, :new, :create]
+  before_action :set_root, only: [:edit, :destroy]
 
   def index
     @profiles = Profile.all
@@ -35,6 +36,11 @@ class ProfilesController < ApplicationController
     end
   end
 
+  def destroy
+    @profile.destroy
+    redirect_to root_path
+  end
+
   private
 
   def set_profile
@@ -44,6 +50,10 @@ class ProfilesController < ApplicationController
   def move_to_index
     redirect_to root_path if current_user.id != @profile.user_id
   end
+
+  def set_root
+    redirect_to root_path unless @profile.user_id == current_user.id
+    end
 
   def profile_params
     params.require(:profile).permit(:image, :name, :position_id, :consept, :depertment_id, :division_id, :license_id, :strength,
