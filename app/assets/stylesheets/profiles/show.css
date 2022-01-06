@@ -24,8 +24,8 @@
 }
 
 .profile-image-content {
-  height: 30vh;
-  width: 40vw;
+  height: 50vh;
+  width: 60vw;
   min-height: 400px;
   background-color: rgb(205, 202, 202);
   object-fit: contain;

@@ -1,0 +1,106 @@
+<div class="profiles-contents">
+  <header class="profiles-header">
+    <%= link_to image_tag('index.image.png' , size: '500x200'), "/" %>
+
+  </header>
+  <div class="profiles-main">
+    <h2 class="profiles-title">プロフィール情報を入力</h2>
+    <%= form_with model: @profile, local: true do |f| %>
+
+    <%= render 'shared/error_messages', model: @profile %>
+
+    <%# 画像 %>
+    <div class="img-upload">
+      <div class="weight-bold-text">
+        画像
+        <span class="indispensable">必須</span>
+      </div>
+      <div class="click-upload">
+        <p>
+          クリックしてファイルをアップロード
+        </p>
+        <%= f.file_field :image, id:"profile-image" %>
+      </div>
+    </div>
+    <%# /画像 %>
+    <%# 名前と自己紹介 %>
+    <div class="new-profiles">
+      <div class="weight-bold-text">
+        名前
+        <span class="indispensable">必須</span>
+      </div>
+      <%= f.text_area :name, class:"profile-text", id:"profile-name", placeholder:"名前（必須 40文字まで)", maxlength:"40" %>
+      <div class="profile-explain">
+        <div class="weight-bold-text">
+          自己紹介
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :consept, class:"profile-text", id:"profile-info", placeholder:"自己紹介（必須 1,000文字まで）例）私は看護師歴5年目です。今までこう言った経験をしてきました。資格はこれです。" ,rows:"7" ,maxlength:"1000" %>
+      </div>
+    </div>
+    <%# /名前と自己紹介 %>
+
+    <%# 経歴 %>
+    <div class="profile-deta">
+      <div class="weight-bold-text">経歴</div>
+      <div class="form">
+        <div class="weight-bold-text">
+          経験年数
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:position_id, Position.all, :id, :name, {}, {class:"select-box", id:"profile-position"}) %>
+        <div class="weight-bold-text">
+          経験した役職の有無
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.collection_select(:depertment_id, Depertment.all, :id, :name, {}, {class:"select-box", id:"item-sales-status"}) %>
+      </div>
+    </div>
+    <%# /経歴 %>
+
+    <%# 経歴2 %>
+    <div class="profile-deta">
+      <div class="weight-bold-text question-text">
+        <a class="question" href="#">?</a>
+      </div>
+      <div class="form">
+        <div class="weight-bold-text">
+          <span class="indispensable">必須</span>
+        </div>
+        <div class="weight-bold-text">
+          部署の経験数（病棟、施設等）
+          <span class="indispensable">必須</span>
+        <%= f.collection_select(:division_id, Division.all, :id, :name, {}, {class:"select-box", id:"item-shipping-fee-status"}) %>
+        </div>
+        <div class="weight-bold-text">
+          保有資格数（医療・看護・福祉系）
+          <span class="indispensable">必須</span>
+        <%= f.collection_select(:license_id, License.all, :id, :name, {}, {class:"select-box", id:"item-prefecture"}) %>
+        </div>
+        <div class="weight-bold-text">
+          得意分野
+          <span class="indispensable-too">推奨</span>
+        </div>
+        <%= f.text_area :strength, class:"profile-text", id:"profile-info", placeholder:"自己紹介（必須 1,000文字まで）例）私は看護師歴5年目です。今までこう言った経験をしてきました。資格はこれです。" ,rows:"7" ,maxlength:"1000" %>
+        <div class="weight-bold-text">
+          苦手分野
+          <span class="indispensable-too">推奨</span>
+        </div>
+        <%= f.text_area :weakness, class:"profile-text", id:"profile-info", placeholder:"自己紹介（必須 1,000文字まで）例）私は看護師歴5年目です。今までこう言った経験をしてきました。資格はこれです。" ,rows:"7" ,maxlength:"1000" %>
+      </div>
+    </div>
+    <%# /経歴2 %>
+
+    <%# 下部ボタン %>
+    <div class="profile-btn-contents">
+      <%= f.submit "変更する" ,class:"create-btn" %>
+      <%=link_to 'もどる', root_path, class:"back-btn" %>
+    </div>
+    <%# /下部ボタン %>
+  </div>
+  <% end %>
+
+  <footer class="profile-footer">
+    <%= link_to image_tag('index.image.png' , size: '500x200'), "/" %>
+  </footer>
+</div>
