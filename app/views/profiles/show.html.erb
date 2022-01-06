@@ -9,7 +9,7 @@
   <div>
 
   <% if current_user == @profile.user %>
-    <%= link_to "プロフィールの編集", "#", method: :get, class: "profile-btn" %>
+    <%= link_to "プロフィールの編集", edit_profile_path(@profile), method: :get, class: "profile-btn" %>
     <p class="or-text">or</p>
     <%= link_to "プロフィールの削除", "#", method: :delete, class:"profile-destroy" %>
   <% end %>
