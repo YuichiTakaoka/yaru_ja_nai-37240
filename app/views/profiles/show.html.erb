@@ -11,7 +11,7 @@
   <% if current_user == @profile.user %>
     <%= link_to "プロフィールの編集", edit_profile_path(@profile), method: :get, class: "profile-btn" %>
     <p class="or-text">or</p>
-    <%= link_to "プロフィールの削除", "#", method: :delete, class:"profile-destroy" %>
+    <%= link_to "プロフィールの削除", profile_path(@profile), method: :delete, class:"profile-destroy" %>
   <% end %>
 
   <div class="profile-deta-box">
