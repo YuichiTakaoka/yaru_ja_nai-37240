@@ -1,0 +1,27 @@
+
+<h3 class="search-top">~検索~</h3>
+<h3 class="search-second"><%= link_to 'トップページへ戻る', root_path%></h3>
+<div class='profiles-contents' id="detailed-search-result-wrapper">
+  <%= search_form_for @q, url: search_profiles_path, html: {id: "detailed-search-form"} do |f| %>
+  </div>
+    <h3 class="search-field">
+      <%= f.label :name, 'name' %>
+      <br>
+      <%= f.text_field :name, placeholder: '名前', value: params[:q]&.dig(:name) %>
+    </div>
+    <%= f.submit '検索' %>
+  <% end %>
+  <ul class='profile-lists' id="detailed-search-result">
+    <% @profiles.each do |profile| %>
+      <li class='list'>
+        <div class="posted-content">
+          <%= image_tag profile.image, class: "profile-img" %><br>
+          <%= profile.name%><br>
+          <%= link_to '詳細', profile_path(profile.id)%>
+        </div>
+      </li>
+    <% end %>
+  </ul>
+  <h3 class="search-footer"></h3>
+  <%= render "shared/fotter" %>
+</div>

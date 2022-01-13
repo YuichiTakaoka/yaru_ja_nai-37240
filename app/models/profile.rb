@@ -16,4 +16,12 @@ class Profile < ApplicationRecord
   validates :depertment_id,  presence: true, numericality: { other_than: 1, message: "can't be blank" }
   validates :division_id,    presence: true, numericality: { other_than: 1, message: "can't be blank" }
   validates :license_id,     presence: true, numericality: { other_than: 1, message: "can't be blank" }
+
+  def self.search(search)
+    if search != ""
+      Profile.where('text LIKE(?)', "%#{search}%")
+    else
+      Profile.all
+    end
+  end
 end

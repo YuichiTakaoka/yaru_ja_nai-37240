@@ -1,6 +1,7 @@
 <%= render "shared/header" %>
 <%= render "shared/too_header" %>
 <div class="main">
+<h3 class="search-btn"><%= link_to 'プロフィール検索', search_profiles_path%></h3>
 
   <%# <% トップページ上部の「YARU_JA_NAI」帯部分 %>
   <div class='title-contents'>
@@ -72,7 +73,7 @@
     </ul>
   </div>
   <%# <% YARU_JA_NAIの概要部分 %>
-
+<h3 class="search-btn"><%= link_to 'プロフィール検索', search_profiles_path%></h3>
 <%= link_to(new_profile_path, class: 'profile-create-btn') do %>
   <span class='profile-btn-text'>プロフィール作成</span>
   <%= image_tag 'push_button-1.png' , size: '185x100' ,class: "profile-btn-icon" %>
