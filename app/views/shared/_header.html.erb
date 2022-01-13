@@ -3,15 +3,6 @@
   <span class='profile-btn-text'>プロフィール作成</span>
   <%= image_tag 'push_button-1.png' , size: '185x100' ,class: "profile-btn-icon" %>
 <% end %>
-  <div class='search-bar-contents'>
-    <div class="yarujanai-icon">
-    <form class="search-form" action="#">
-      <input class='input-box' placeholder='プロフィール検索'>
-      <button class="search-button">
-      <%= image_tag "search_too.png", class: "search-icon" %>
-      </button>
-    </form>
-  </div>
   <div clas='nav'>
     <ul class='list-right'>
       <% if user_signed_in? %>

@@ -1,0 +1,70 @@
+#detailed-search-wrapper{
+  display:flex;
+  justify-content: center;
+  width: 100vw;
+  background-color: bisque;
+}
+
+#detailed-search-form{
+  background-color: bisque;
+  width: 350px;
+}
+
+.search-top {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  background-color: bisque;
+}
+
+.search-second {
+  font-size: 20px;
+  background-color: bisque;
+}
+
+.profiles-contents {
+  width: 100vw;
+}
+
+.search-field{
+  margin: 10px 0;
+  background-color: bisque;
+}
+
+#detailed-search-result-wrapper{
+  width: 80%;
+  display: flex;
+  image-rendering: auto;
+}
+
+.list{
+  list-style: none;
+}
+
+#detailed-search-result{
+  width: 100%;
+  display: flex;
+}
+
+.posted-content{
+  margin: 10px;
+}
+
+.profile-img {
+  width: 33vh;
+  height: 33vh;
+  background-color: bisque;
+}
+
+.check_lb {
+  display:block;
+}
+
+#post_search{
+  display: flex;
+}
+
+.search-footer {
+  width: 100vw;
+  background-color: beige;
+}

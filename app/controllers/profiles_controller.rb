@@ -1,7 +1,7 @@
 class ProfilesController < ApplicationController
   before_action :set_profile, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: :index
-  before_action :move_to_index, except: [:index, :show, :new, :create]
+  before_action :move_to_index, except: [:index, :show, :new, :create, :search]
   before_action :set_root, only: [:edit, :destroy]
 
   def index
@@ -39,6 +39,15 @@ class ProfilesController < ApplicationController
   def destroy
     @profile.destroy
     redirect_to root_path
+  end
+
+  def search
+    if params[:q]&.dig(:name)
+      squished_keywords = params[:q][:name].squish
+      params[:q][:name_cont_any] = squished_keywords.split(" ")
+    end
+    @q = Profile.ransack(params[:q])
+    @profiles = @q.result
   end
 
   private
