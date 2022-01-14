@@ -61,6 +61,16 @@ belongs_to: profile
 |洗い出した要件   |                                                                    |
 
 
+| 開発環境       |                                       | 
+| ------------- | ------------------------------------- |
+| フロントエンド  | HTML,CSS / JavaScript                 |
+| バックエンド    | Ruby / Ruby on Rails                  |
+| インフラ       | AWS (EC2), MmSQL                      |
+| テストコード    | Rspec                                 |
+| テキストエディタ | Visual Studio Code                    |
+| タスク管理      | GitHubプロジェクトボード                 |
+
+
 | 実際のプロフィール画面                                                                 | 
 | ------------- | ------------------------------------------------------------------ |
 [![Image from Gyazo](https://i.gyazo.com/9dd53e37da83d30734b654ae18b90801.gif)](https://gyazo.com/9dd53e37da83d30734b654ae18b90801)
@@ -70,14 +80,4 @@ belongs_to: profile
 | ------------- | ------------------------------------------------------------------ |
 [![Image from Gyazo](https://i.gyazo.com/c5e076d004b9b627ca14d77d2bbc580f.png)](https://gyazo.com/c5e076d004b9b627ca14d77d2bbc580f)
 |                                                                                     |
-
-| 開発環境                                               | 
-| ------------- | ------------------------------------- |
-| フロントエンド  | HTML,CSS / JavaScript                 |
-| バックエンド    | Ruby / Ruby on Rails                  |
-| インフラ       | AWS (EC2), MmSQL                      |
-| テストコード    | Rspec                                 |
-| テキストエディタ | Visual Studio Code                    |
-| タスク管理      | GitHubプロジェクトボード                 |
-
 
