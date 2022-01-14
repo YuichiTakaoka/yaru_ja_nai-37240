@@ -43,3 +43,15 @@ has_many :favorites
 
 belongs_to: user
 belongs_to: profile
+
+## comments
+| Column             | Type       | Options                        |
+| -------------------| ---------- | ------------------------------ |
+| text               | text       |                                |
+| user               | references | null: false, foreign_key: true |
+| profile            | references | null: false, foreign_key: true |
+
+### Association
+
+belongs_to: user
+belongs_to: profile
