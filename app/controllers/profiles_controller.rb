@@ -22,7 +22,8 @@ class ProfilesController < ApplicationController
   end
 
   def show
-    
+    @comments = @profile.comments.includes(:user)
+    @comment = Comment.new
   end
 
   def edit
