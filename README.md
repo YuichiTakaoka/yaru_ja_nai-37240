@@ -71,7 +71,7 @@ belongs_to: profile
 | タスク管理      | GitHubプロジェクトボード                 |
 
 
-![実際のプロフィール画面](./images/yarujanai-readme1.png)
+![実際のプロフィール画面](https://github.com/projects/yaru-ja-nai-37240/app/aseets/images/yarujanai-readme1.png)
 
 | データベース設計                                                                      | 
 | ------------- | ------------------------------------------------------------------ |
