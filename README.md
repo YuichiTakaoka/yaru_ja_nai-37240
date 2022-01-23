@@ -89,4 +89,4 @@ belongs_to: profile
 ### ・name入力にてプロフィールが検索でき、一覧が表示される. 
 
 ## ER図
-![ER図](yarujanai-readme4.png)
+![ER図](yarujanai-readme4.png). 
