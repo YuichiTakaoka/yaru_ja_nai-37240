@@ -87,6 +87,3 @@ belongs_to: profile
 ![検索画面](yarujanai-readme3.png)
 ### ・トップページ上部にプロフィール検索があり、クリックにて検索ページに遷移できる. 
 ### ・name入力にてプロフィールが検索でき、一覧が表示される. 
-
-## ER図
-![ER図](yarujanai-readme4.png). 
