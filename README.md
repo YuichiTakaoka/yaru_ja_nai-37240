@@ -63,14 +63,19 @@ belongs_to: profile
 
 
 
-| 開発環境       |                                       | 
-| ------------- | ------------------------------------- |
-| フロントエンド  | HTML,CSS / JavaScript                 |
-| バックエンド    | Ruby / Ruby on Rails                  |
-| インフラ       | AWS (EC2), MmSQL                      |
-| テストコード    | Rspec                                 |
-| テキストエディタ | Visual Studio Code                    |
-| タスク管理      | GitHubプロジェクトボード                 |
+# 開発環境
+## フロントエンド
+### HTML,CSS / JavaScript
+## バックエンド
+### Ruby / Ruby on Rails
+## インフラ
+### MySQL
+## テストコード
+### Rspec
+## テキストエディタ
+### Visual Studio Code
+## タスク管理
+### GitHubプロジェクトボード
 
 
 ## プロフィール作成画面
