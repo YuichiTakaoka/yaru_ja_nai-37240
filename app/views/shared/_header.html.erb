@@ -1,12 +1,12 @@
 <header class='top-page-header'>
    <%= link_to(new_profile_path, class: 'profile-create-btn') do %>
-  <span class='profile-btn-text'>プロフィール作成</span>
-  <%= image_tag 'push_button-1.png' , size: '185x100' ,class: "profile-btn-icon" %>
+  <span class='profile-create-text'>プロフィール作成</span>
+  
 <% end %>
   <div clas='nav'>
     <ul class='list-right'>
       <% if user_signed_in? %>
-        <li><%= link_to current_user.name, "#", class: "user-name"%></li>
+        <li><%= link_to "#{current_user.name}さん", "#", class: "user-name"%></li>
         <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
       <% else %>
         <li><%= link_to 'ログイン', new_user_session_path, class: "login"%></li>

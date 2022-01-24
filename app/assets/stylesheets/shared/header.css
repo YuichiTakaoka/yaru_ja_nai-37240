@@ -3,21 +3,24 @@
 }
 
 .top-page-header {
-  width: 100vh;
+  width: 100vw;
   padding: 2vh 15vw;
   display: flex;
   flex-direction: column;
+  background-color: bisque;
 }
 
-.profile-btn-icon{
-  display: flex;
-  justify-content: center;
+.profile-create-text{
+  position: relative;
+  font-size: 30px;
+  border: solid 4px khaki;
+  background-color: rgb(224, 255, 224);
 }
 
 .nav {
   font-size: 25px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
   padding: 1vh 0;
