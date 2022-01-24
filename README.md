@@ -52,6 +52,10 @@ belongs_to: profile
 
 # 本番環境
 ### https://yaru-ja-nai-37240.herokuapp.com/
+<br>ID: yuichi</br>
+<br>password: 2538</br>
+# 本番環境テストアカウント
+
 <br>email: citrus@icloud.com</br>
 <br>password: 123456a</br>
 
