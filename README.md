@@ -68,8 +68,10 @@ belongs_to: profile
 
 
 # 開発環境
+## コーディング
+HTML,CSS
 ## フロントエンド
-HTML,CSS / JavaScript
+JavaScript
 ## バックエンド
 Ruby / Ruby on Rails
 ## インフラ
@@ -96,6 +98,6 @@ GitHubプロジェクトボード
 <br>・詳細画面下部にコメント機能がある</br>
 
 ## 検索画面
-![検索画面](yarujanai-readme3.png)
+![検索画面](yarujanai-readme5.png)
 <br>・トップページ上部にプロフィール検索があり、クリックにて検索ページに遷移できる</br>
 <br>・name入力にてプロフィールが検索でき、一覧が表示される</br>
