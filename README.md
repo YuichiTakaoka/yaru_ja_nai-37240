@@ -68,8 +68,10 @@ belongs_to: profile
 
 
 # 開発環境
+## コーディング
+HTML,CSS
 ## フロントエンド
-HTML,CSS / JavaScript
+JavaScript
 ## バックエンド
 Ruby / Ruby on Rails
 ## インフラ
