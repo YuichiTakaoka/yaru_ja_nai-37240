@@ -48,12 +48,12 @@ belongs_to: profile
 
 
 # アプリケーション名. 
-## yaru-ja-nai-37240. 
+## yaru-ja-nai-37240
 
-# 本番環境. 
-### https://yaru-ja-nai-37240.herokuapp.com/. 
-### email: citrus@icloud.com. 
-### password: 123456a. 
+# 本番環境
+### https://yaru-ja-nai-37240.herokuapp.com/
+<br>email: citrus@icloud.com</br>
+<br>password: 123456a</br>
 
 
 # 作成背景 
